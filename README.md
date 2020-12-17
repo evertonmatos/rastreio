@@ -35,6 +35,10 @@ Exportando o resultado para um arquivo html
 
 `rastreio -c PO938188265BR -o saida.html`
 
+Executando via notify-send no Linux
+
+`CODIGO="XXXXXXXXXXXXX" && while sleep 600; do notify-send "$CODIGO" "$(python rastreio -c $CODIGO | grep $CODIGO -A10 | tail -n 1)" ; done`
+
 &nbsp;
 
 ![DFU MODE](https://image.ibb.co/dQc03G/rastr.jpg)
